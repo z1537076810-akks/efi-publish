@@ -62,6 +62,7 @@ EFI/
 LICENSES/
 ├── WhateverXe-LICENSE.txt   # WhateverXe 的许可文本（源自 WhateverGreen）
 └── NOTICE.md                # 各组件来源与许可说明
+LICENSE                      # 本仓库原创内容（配置/文档/脚本）的 MIT 许可
 ```
 
 本仓库**不包含**：Windows 的 `EFI/Microsoft`、BIOS 固件 dump、OpenCore 调试日志、`config.plist` 的历史备份。
@@ -98,7 +99,9 @@ LICENSES/
 
 ## 许可与致谢
 
-各 kext / 工具版权归原作者所有，详细来源与许可见 [`LICENSES/NOTICE.md`](LICENSES/NOTICE.md)。
+本仓库**原创部分**（`config.plist`、ACPI/文档、配置整合与脚本）采用 [MIT License](LICENSE)。
+
+`EFI/` 中的第三方组件（OpenCore、各个 kext、驱动等）**不属于 MIT 授权范围**，版权归各自原作者，仍按上游许可分发；详细来源与许可见 [`LICENSES/NOTICE.md`](LICENSES/NOTICE.md)。MIT 许可不改变、也不额外授予这些组件在其自身许可之外的权利。
 
 - WhateverXe：基于 [WhateverGreen](https://github.com/acidanthera/WhateverGreen) 的定制分支，版权声明与许可全文见 `LICENSES/WhateverXe-LICENSE.txt`
 - OpenCore、Lilu、VirtualSMC、AppleALC、NVMeFix、VoodooPS2 等：acidanthera 项目
